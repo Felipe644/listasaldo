@@ -1,0 +1,15 @@
+algoritmo "lista3ex4"
+
+var
+
+num:inteiro
+inicio
+escreval("===========DIVISÃO POR 11 DE RESTO 5 ==========")
+para num de 1000 ate 1999 faca
+   se (num%11)=5 entao
+      Escreval("==================== ",num," ====================")
+   fimse
+fimpara
+escreval("======================FIM======================")
+
+fimalgoritmo

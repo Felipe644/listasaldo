@@ -1,0 +1,37 @@
+algoritmo "lista3ex1"
+
+var
+maior,menor,num:real
+d,cont:inteiro
+inicio
+cont<-1
+d<-1
+escreval("=====================")
+escreval("MAIOR e MENOR NÙMERO")
+escreval("=====================")
+escreval("Digite 15 números")
+escreva(cont,"°numero:")
+leia(num)
+menor<-num
+maior<-num
+cont<-cont+1
+para cont<-1 ate 15 faca
+   escreva(cont,"°número:")
+   leia(num)
+   enquanto (d<1)faca
+      maior<-num
+      menor<-num
+      d<-d+1
+   fimenquanto
+   se (num< menor)entao
+      menor<-num
+   senao
+      se( maior<num)entao
+         maior<-num
+      fimse
+   fimse
+fimpara
+escreval("O MAIOR NÚMERO DIGITADO FOI ",maior," E O MENOR FOI   ",menor, ".")
+escreval("==============================FIM==============================")
+
+fimalgoritmo

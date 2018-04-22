@@ -1,0 +1,85 @@
+algoritmo "TRABALHO"
+// Função :
+// Autor :
+// Data : 14/04/2018
+// Seção de Declarações
+var
+operacao,num1,num2,idade,p,c,n,i,numero,b,idhomen,idmu,sexhomen,sexmu:inteiro//declarando variávei de número
+medmu,medhomen,o,med:real
+sexo:caracter
+inicio
+enquanto (operacao<>7)faca//enquanto a opção for diferente de de 7
+   escreval("[1] SOMA") //se o usuário escolher a opção 1 o programa irá realizar uma soma
+   escreval("[2] SUBTRAÇÂO")//se o usuário escolher a opção 2 o programa irá realizar uma subtração
+   escreval("[3] DIVISÂO") //se o usuário escolher a opção 3 o programa irá realizar uma divisão
+   escreval("[4] FAIXA ETÁRIA") //se o usuário escolher a opção 4 o programa irá realizar uma operação de faixa etária
+   escreval("[5] NÚMEROS PRIMOS")//se o usuário escolher a opção 5 o programa irá realizar uma operação de números primos
+   escreval("[6] MUDANÇA DE BASE")
+   escreval("[7] SAIR")//se o usuário escolher a opção 7 o programa irá sair do programa
+   leia(operacao)
+   escolha operacao //Escolhendo a opção
+   caso 1//Soma
+      escreval("Digite um número:")//entra com um número
+      leia(num1)
+      escreval("Digite outro número:")//entra cou outro número
+      leia(num2)
+      o<-num1+num2//Operação para a soma
+      escreval("A soma é igual a ",o,":")//resultado da soma
+   caso 2//Subtração
+      escreval("Digite um número:")//entra com um número
+      leia(num1)
+      escreval("Digite outro número:")//entra com outro número
+      leia(num2)
+      o<-num1-num2 //Operação de subtração
+      escreval("A subtração é igual a ",o,":")//Resultado da subtração
+   caso 3 //Divisão
+      escreval("digite um número:")//entra com um número
+      leia(num1)
+      escreval("Didgite outro número:")//entra com outro número
+      leia(num2)
+      o<-num1/num2//Operação de divisão
+      escreval("A divisão é igual a ",o,":")//Resultado da operação
+   caso 4
+      escreval("Digite a quantidade de pessoas a partir do número 0")//entra com a quantidade de pessoas
+      leia(numero)
+      enquanto (b <= numero)FACA//condição para enquanto b for menor ou igual ao número digitado pelo usuário
+         escreva("Digite [m] para masculino ou [f] para feminino:")//escolha de sexo
+         leia (sexo)
+         escreval("Digite a idade:")//escolha de idade
+         leia (idade)
+         se(sexo = "m") entao //verificar se a opção escolhida foi m
+            sexhomen<- sexhomen + 1
+            idhomen<- idhomen + idade
+         senao
+            se(sexo="f")entao //verificar se a idade escolhida foi f
+               sexmu <- sexmu+1
+               idmu<- idmu + idade
+            fimse
+         fimse
+         b<- b + 1
+      fimenquanto
+      medhomen<-idhomen/sexhomen//operação para descobrir a média de homens
+      medmu<-idmu/sexmu//operação para descobrir média de mulheres
+      escreval("Quantidade de Homens: ",sexhomen,". Média de idade: ",medhomen:5:2,".")//escrever a quantidade de Homen e a média de Homen
+      escreval("Quantidade de Mulheres: ",sexmu,". Média de idade: ",medmu:5:2,".")//escrever a quantidade de múlher e a média de ulher
+   caso 5
+      escreval("Digite um núemro")//entra com um número
+      leia(n)
+      para c de 1 ate n faca//contagen de 1 até o número digitado
+         p<-0
+         para i de 1 ate c faca//contagen de 1 até c
+            se (c mod i=0)entao//se c resto da divisão por i for igula a 0
+               p<-p+1//p soma um
+            fimse
+         fimpara
+         se(p=2)entao//se p for igual a 2 entao o número é primo
+            escreval(c)//escrever os números primos
+         fimse
+      fimpara
+
+
+   fimescolha
+fimenquanto
+fimalgoritmo
+
+fimalgoritmo

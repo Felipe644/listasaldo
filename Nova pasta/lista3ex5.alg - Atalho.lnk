@@ -1,0 +1,22 @@
+algoritmo "lista3ex5"
+
+var
+num, impar,cont, par:inteiro
+inicio
+escreval("======SOMA DOS NÚMEROS IMPARES E PARES=====")
+cont<-1
+enquanto num < 1000 faca
+   Escreva("Digite ",cont,"° número: ")
+   leia(num)
+   se (num%2)=0 entao//se o resto da divisão por 2 for igual a 0 entao o número é PAR
+      par <-par + num
+   senao
+      se (num%2)=1 entao//se o resto da divisão por 2 for igual a 1 é impar
+         impar<- impar +num
+      fimse
+   fimse
+ cont<-cont+1
+fimenquanto
+Escreval("Soma dos PARES: ", par)
+Escreval("Soma dos IMPAPES: ", impar)
+fimalgoritmo

@@ -1,0 +1,15 @@
+algoritmo "lista3ex2"
+
+var
+Numero,i,c: inteiro
+inicio
+ escreval("===============TABUADA===============")
+escreval("Digite um número para ver sua tabuada:")
+Leia(Numero)
+escreval("===========TABUADA DE ",Numero," ============")
+Para c de 1 ate 10 faca
+   Escreval(Numero,"x",c , " = " , Numero*c)
+FimPara
+
+
+fimalgoritmo

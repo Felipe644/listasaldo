@@ -1,0 +1,13 @@
+algoritmo "ex2"
+
+var
+f,c:real
+inicio
+escreval("========================")
+escreval("CONVERSÃO DE TEMPERATURA")
+escreval("========================")
+escreval("Informe uma temperatira em °C:")
+leia(c)
+f<- (9*c+160)/5
+escreval("A temperatura em °c informada é equivalente a °F",f)
+fimalgoritmo

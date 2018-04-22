@@ -1,0 +1,13 @@
+algoritmo "ex5L1"
+
+var
+n,quadrado:inteiro
+inicio
+ESCREVAL("==============================================")
+escreval("PROGRAMA PARA CALCULAR O QUADRADO DE UM NÚMERO")
+ESCREVAL("==============================================")
+escreval("Digite um número:")
+leia(n)
+quadrado<-(n*n)
+escreval("O quadrado de ",n," é ", quadrado)
+fimalgoritmo

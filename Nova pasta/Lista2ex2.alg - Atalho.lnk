@@ -1,0 +1,32 @@
+algoritmo "l2ex2"
+
+var
+lad1,lad2,lad3:real
+inicio
+escreval("Informe o valor do primeiro lado:")
+leia(lad1)
+escreval("Informe o valor do segundo lado:")
+leia(lad2)
+escreval("Informe o valor do terceiro lado:")
+leia(lad3)
+//Verificação se os valores informados formam um triângulo
+se (lad1 + lad2 > lad3) e (lad2 + lad3 >lad1) e (lad3 + lad1 >lad2) entao
+   escreva("é um triangulo")
+   se(lad1=lad2)e (lad1=lad3)entao//Verificar se é um triângulo equilátero
+      escreva(" Equilatero")
+   senao
+      se(lad1=lad2)ou (lad1=lad3)ou (lad2=lad3)entao
+         escreva(" Iósceles")
+      senao
+         se(lad1<>lad2)ou (lad1<>lad3)ou (lad2<>lad3)entao
+            escreva(" Escaleno")
+senao
+se((lad1 + lad2 < lad3) e (lad2 + lad3 <lad1) e (lad3 + lad1 <lad2) entao
+         escreval("nao é um triângulo")
+            fimse
+         fimse
+      fimse
+   fimse
+fimse
+
+fimalgoritmo

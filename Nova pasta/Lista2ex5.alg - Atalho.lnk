@@ -1,0 +1,27 @@
+algoritmo "ex5l2"
+
+var
+num1,num2,num3,soma,mult:inteiro
+media:real
+m:caracter
+inicio
+escreval("Digite um valor:")
+leia(num1)
+escreval("Digite outro valor:")
+leia(num2)
+escreval("Digite outro valor:")
+leia(num3)
+escreval("Digite[m] Para caucular a Média, [s] Para caucular a Soma e [mult] para calcular a Multiplicação:")
+leia(m)
+escolha (m)
+caso "m"
+   media<-(num1+num2+num3)/3
+   escreval("A média é ",media)
+caso "s"
+   soma<-num1+num2+num3
+   escreval("A soma é ",soma)
+caso "mult"
+   mult<-num1*num2*num3
+   escreval("A multiplicação é ",mult)
+fimescolha
+fimalgoritmo

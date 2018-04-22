@@ -1,0 +1,22 @@
+algoritmo "ex1"
+
+var
+num1,soma,num2:inteiro
+prod,med,dife:real
+inicio
+escreval("================================")
+escreval("SOMA, DIFERENÇA, PRODUTO E MÉDIA")
+escreval("================================")
+escreval("Digite um valor:")
+leia(num1,num2)
+soma<-(num1+num2)
+dife<-(num1-num2)
+prod<-(num1*num2)
+med<-(num1+num2)/2
+
+escreval("O resultado da Soma é: ",soma)
+escreval("O resultado da Subtração é: ",dife)
+escreval("O resultado da Multiplicação é: ",prod)
+escreval("o resultado da Média é: ",med)
+
+fimalgoritmo

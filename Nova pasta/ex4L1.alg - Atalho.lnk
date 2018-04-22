@@ -1,0 +1,17 @@
+algoritmo "ex4l1"
+
+var
+n1,n2,n3:inteiro
+inicio
+escreval("================")
+escreval("TROCA DE NÚMEROS")
+escreval("================")
+escreval("Informe o 1° número:")
+leia(n1)
+escreval("Informe o 2° número:")
+leia(n2)
+n3<-n1
+n1<-n2
+n2<-n3
+escreval("O primeiro número é ",n1," e o segundo é ",n2)
+fimalgoritmo

@@ -1,0 +1,21 @@
+algoritmo "lista3ex10"
+
+var
+c,i,p,n:inteiro
+inicio
+escreval("Digite um núemro")
+leia(n)
+para c de 1 ate n faca
+   p<-0
+   para i de 1 ate c faca
+      se (c mod i=0)entao
+         p<-p+1
+      fimse
+   fimpara
+   se(p=2)entao
+      escreval(c)
+   fimse
+fimpara
+
+
+fimalgoritmo

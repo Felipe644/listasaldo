@@ -1,0 +1,17 @@
+algoritmo "ex3l1"
+
+var
+raio,volume,altura:real
+inicio
+escreval("=========================")
+escreval("CALCULO DE VOLUME DE ÓLEO")
+escreval("=========================")
+escreva("Informe o raio:")
+leia(raio)
+escreva("Informe a altura:")
+leia(altura)
+volume<- (3.14*(raio*raio)*altura)
+escreval("O VOLUME È ",volume,"ml")
+escreval("============FIM===========")
+
+fimalgoritmo

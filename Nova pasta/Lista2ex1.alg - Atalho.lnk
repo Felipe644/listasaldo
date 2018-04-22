@@ -1,0 +1,25 @@
+algoritmo "ex1Lista2"
+
+var
+n,resto:inteiro
+inicio
+escreval("Digite um número:")
+leia(n)
+resto<-(n % 2)
+se (resto = 0) entao
+   escreval("O número ",n," é PAR")
+senao
+   escreval("O número ",n," é IMPAR")
+se(n>=0) entao
+   escreval("O número ",n," é POSITIVO")
+senao
+   escreval("O número ",n," é NEGATIVO" )
+   fimse
+fimse
+
+
+
+
+
+
+fimalgoritmo

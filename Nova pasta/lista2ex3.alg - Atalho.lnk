@@ -1,0 +1,25 @@
+algoritmo "Ex3L2"
+
+var
+num1,num2,num3,maior,med:real
+inicio
+escreval("DIGITE 3 NOTAS")
+leia(num1,num2,num3)
+med<-(num1+num2+num3)/3
+escreval("A média é ",med:5:2)
+se(num1>num2)e(num1>num3)entao
+   escreval("E o maior número é ",num1)
+senao
+   se(num2>num1)e(num2>num3)entao
+      escreval("E o maior número é ",num2)
+   senao
+      se(num3>num1)e(num3>num2)entao
+         escreval("E o maior número é ",num3)
+
+      fimse
+   fimse
+fimse
+
+
+
+fimalgoritmo
